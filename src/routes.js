@@ -1,9 +1,10 @@
 // pages
-import { Home, Login, Catalog } from "./pages";
+import { Home, ErrorPage, Login, Catalog } from "./pages";
 
 const routes = [
   {
     path: "/",
+    errorElement: <ErrorPage />,
     element: <Home />,
     children: [
       {
